@@ -443,7 +443,8 @@ footer a:hover{color:var(--naranja)}
 .ig-tile:hover .ig-ic{opacity:1}
 @media(max-width:900px){.insta-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.insta-grid{grid-template-columns:repeat(2,1fr)}.insta-head{align-items:flex-start}}
-.ig-widget-wrap{min-height:280px;border-radius:14px;overflow:hidden}
+.ig-widget-wrap{min-height:280px;max-height:470px;border-radius:14px;overflow:hidden;position:relative}
+.ig-widget-wrap::after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px;background:linear-gradient(to bottom,rgba(251,238,223,0),#FBEEDF);pointer-events:none}
 .ig-loading{padding:60px 20px;text-align:center;color:var(--gris);font-weight:600;background:#fff;border-radius:14px;border:1px solid #eceef2}
 .colacion-feature{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;background:#fff;border-radius:16px;padding:22px;box-shadow:var(--sombra);border:1px solid #eceef2;margin-bottom:26px}
 .cf-video{flex:none;border-radius:12px;overflow:hidden;line-height:0;background:#eceff5}
@@ -832,23 +833,24 @@ footer a:hover{color:var(--naranja)}
     <div class="container">
       <div class="enc">
         <div class="mini">Egresados IGI</div>
-        <h2>Testimonios de nuestras colaciones</h2>
-        <p>Grabados en vivo en los actos de colación, con el título recién recibido en la mano.</p>
+        <h2>Testimonios de nuestros alumnos</h2>
+        <p>Nadie lo cuenta mejor que quienes ya pasaron por IGI. Estos testimonios están grabados en vivo el día de la colación —con el título recién recibido en la mano—: la emoción, el orgullo y las ganas de salir a trabajar, en primera persona. Son la prueba más honesta de lo que significa formarte con nosotros.</p>
       </div>
       <div class="reels-intro">
-        <span class="manuales-tag">💬 Videos reales · testimonios</span>
-        <p>Escuchá a nuestros egresados recomendando IGI en primera persona — la mejor prueba es la de quienes ya pasaron por acá:</p>
+        <span class="manuales-tag">💬 Videos reales · testimonios de alumnos</span>
       </div>
-      <div class="reels-row">
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1349401786192455%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F666768965683417%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+      <div class="reels-row reels-4">
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=446&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1349401786192455%2F&show_text=true&width=250&t=0" width="250" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=446&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F666768965683417%2F&show_text=true&width=250&t=0" width="250" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=446&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1681044942805633%2F&show_text=true&width=250&t=0" width="250" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=446&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1186495000153999%2F&show_text=true&width=250&t=0" width="250" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
       </div>
       <div class="testis">
         <div class="testi"><div class="estrellas">★★★★★</div><div class="txt">"Arranqué el ABC Chef sin saber hervir agua y hoy tengo mi propio emprendimiento de viandas. Los profes te acompañan clase a clase."</div><div class="quien"><div class="ava">M</div><div><b>Micaela R.</b><span>Egresada ABC Chef · IGI Quilmes</span></div></div></div>
         <div class="testi"><div class="estrellas">★★★★★</div><div class="txt">"La carrera de Chef Internacional me abrió las puertas de un hotel 5 estrellas. La cursada es 100% práctica, cocinás desde el día uno."</div><div class="quien"><div class="ava">J</div><div><b>Julián T.</b><span>Chef Internacional · IGI Belgrano</span></div></div></div>
         <div class="testi"><div class="estrellas">★★★★★</div><div class="txt">"Hice Pastelero Internacional y después Diseño de Tortas. Hoy vivo de mis tortas de boda. IGI me cambió la vida."</div><div class="quien"><div class="ava">S</div><div><b>Sofía L.</b><span>Pastelera · IGI Córdoba</span></div></div></div>
       </div>
-      <div class="nota">💡 Arriba ya va el <b>video real de testimonios de egresados</b> (embebido de Facebook con carga diferida). Los tres testimonios en texto de abajo siguen como ejemplo: en el sitio real conviene usar egresados <b>reales, con nombre, sede y logro verificable</b>. Es lo que más citan las IAs y lo que más convence.</div>
+      <div class="nota">💡 Arriba van <b>4 videos reales de testimonios de alumnos</b> (embebidos de Facebook con carga diferida), en la misma fila prolija que la sección de eventos. Los tres testimonios en texto de abajo siguen como ejemplo: en el sitio real conviene sumar egresados <b>reales, con nombre, sede y logro verificable</b>. Es lo que más citan las IAs y lo que más convence.</div>
     </div>
   </section>
 
@@ -880,7 +882,7 @@ footer a:hover{color:var(--naranja)}
         </div>
       </div>
       <div id="ig-widget" class="ig-widget-wrap"><div class="ig-loading">📷 Cargando las últimas publicaciones de @igi.argentina…</div></div>
-      <div class="nota">💡 En el sitio real, esta grilla trae <b>automáticamente las últimas publicaciones de Instagram</b> de forma liviana (sin frenar la página ni afectar el posicionamiento). Acá se muestran fotos de ejemplo que enlazan al perfil <b>@igi.argentina</b>. Idea a futuro: mostrar el feed del país que elige el visitante.</div>
+      <div class="nota">💡 Esta grilla trae <b>automáticamente las últimas publicaciones reales de @igi.argentina</b> de forma liviana (sin frenar la página ni afectar el posicionamiento). La dejamos en <b>vista compacta</b> para no alargar la home; con el botón "Seguir en Instagram" el visitante ve el perfil completo. Idea a futuro: mostrar el feed del país que elige el visitante.</div>
     </div>
   </section>
 </div>
