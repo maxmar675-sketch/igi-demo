@@ -456,8 +456,9 @@ footer a:hover{color:var(--naranja)}
 .reels-intro{text-align:center;max-width:640px;margin:0 auto 20px}
 .reels-intro p{color:var(--gris);font-size:15.5px;margin-top:8px}
 .reels-row{display:flex;flex-wrap:wrap;gap:22px;justify-content:center}
-.reel-card{border-radius:14px;overflow:hidden;line-height:0;box-shadow:var(--sombra);border:1px solid #eceef2;background:#eceff5}
+.reel-card{border-radius:14px;overflow:hidden;box-shadow:var(--sombra);border:1px solid #eceef2;background:#fff}
 .reel-card iframe{display:block;width:267px;height:591px;max-width:100%}
+.reel-cap{padding:11px 12px;font-weight:800;font-size:13.5px;color:var(--azul);text-align:center}
 @media(max-width:560px){.reel-card iframe{width:300px}}
 .badge-paises{display:flex;gap:6px;font-size:18px;margin-top:8px}
 
@@ -742,30 +743,13 @@ footer a:hover{color:var(--naranja)}
         <h2>Torneo InterIGI y actos de colación</h2>
         <p>Estudiar en IGI es más que cursar: es competir en el Torneo InterIGI —que celebramos hace más de 20 años— y vivir actos de colación multitudinarios junto a tu familia, tus profesores y compañeros de toda la red.</p>
       </div>
-      <div class="colacion-feature">
-        <div class="cf-video">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F868200032475247%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-        <div class="cf-text">
-          <span class="manuales-tag">🎓 Video real · última colación</span>
-          <h3>Así se vive una colación IGI</h3>
-          <p>Cada año, miles de egresados de toda la red reciben su título rodeados de su familia, sus profesores y sus compañeros. Emoción, orgullo y una fiesta que no se olvida. Mirá cómo fue nuestra última colación.</p>
-          <a class="btn btn-fb" href="https://www.facebook.com/reel/868200032475247/" target="_blank" rel="noopener">▶ Ver el video en Facebook</a>
-        </div>
+      <div class="reels-intro">
+        <span class="manuales-tag">🎥 Videos reales de nuestros eventos</span>
+        <p>El Torneo InterIGI y los actos de colación, en primera persona:</p>
       </div>
-      <div class="video-grid">
-        <div class="video-card" onclick="alert('DEMO: acá va el video real de YouTube del Torneo InterIGI (embed con lazy-load para no afectar la velocidad).')">
-          <div class="video-thumb" style="background:linear-gradient(120deg,#B33F0A,#F58220)">🏆<span class="play">▶</span><span class="dur-v">4:12</span></div>
-          <div class="vc-body"><h4>Torneo InterIGI — La gran final</h4><span>Los mejores alumnos de las filiales de 7 países</span></div>
-        </div>
-        <div class="video-card" onclick="alert('DEMO: acá va el video real del acto de colación (embed de YouTube con lazy-load).')">
-          <div class="video-thumb" style="background:linear-gradient(120deg,#1F2430,#41507A)">🎓<span class="play">▶</span><span class="dur-v">6:35</span></div>
-          <div class="vc-body"><h4>Acto de colación — Buenos Aires</h4><span>Más de 10.500 egresados reciben su título cada año</span></div>
-        </div>
-        <div class="video-card" onclick="alert('DEMO: acá van los testimonios en video grabados en las colaciones.')">
-          <div class="video-thumb" style="background:linear-gradient(120deg,#7A1F4C,#C2447F)">💬<span class="play">▶</span><span class="dur-v">3:48</span></div>
-          <div class="vc-body"><h4>Testimonios de egresados</h4><span>Grabados en vivo en los actos de colación</span></div>
-        </div>
+      <div class="reels-row">
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1062299242023494%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🏆 Torneo InterIGI — San Juan</div></div>
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F868200032475247%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Así se vive una colación IGI</div></div>
       </div>
       <div class="galeria">
         <div class="gal-item" style="background:linear-gradient(135deg,#F58220,#D96A0B)">🥇<small>Podio InterIGI</small></div>
@@ -775,7 +759,7 @@ footer a:hover{color:var(--naranja)}
         <div class="gal-item" style="background:linear-gradient(135deg,#5C3A21,#96633C)">🍽️<small>Platos finalistas</small></div>
         <div class="gal-item" style="background:linear-gradient(135deg,#3B2A78,#6C55B8)">🎉<small>Festejo</small></div>
       </div>
-      <div class="nota">💡 Arriba ya va el <b>video real de la última colación</b> (embebido de Facebook con carga diferida para no frenar el sitio). Las tres tarjetas de abajo y la galería siguen como ejemplos: ahí van los <b>videos reales del Torneo InterIGI y los testimonios</b> y fotos reales de los eventos. Este contenido emocional es el que mejor convierte y el que nadie más tiene: es material propio, imposible de copiar.</div>
+      <div class="nota">💡 Arriba ya van los <b>videos reales del Torneo InterIGI (San Juan) y de la última colación</b> (embebidos de Facebook con carga diferida para no frenar el sitio). La galería de abajo sigue como ejemplo: ahí van fotos reales de los eventos. Este contenido emocional es el que mejor convierte y el que nadie más tiene: es material propio, imposible de copiar.</div>
     </div>
   </section>
 
