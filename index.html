@@ -488,7 +488,16 @@ footer a:hover{color:var(--naranja)}
   .wsp-float{right:14px;bottom:14px;padding:11px 16px 11px 13px;font-size:13.5px}
   .wsp-float .ic{font-size:19px}
   .wsp-selector{right:12px;left:12px;width:auto;bottom:76px}
+  .manuales-band{grid-template-columns:1fr!important;text-align:center;padding:26px 20px!important}
+  .manuales-band .mb-ic{margin:0 auto}
 }
+.manuales-band{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:linear-gradient(120deg,#1F2430,#2B3245);border-radius:20px;padding:34px 38px;box-shadow:0 14px 34px rgba(15,18,26,.28)}
+.manuales-band .mb-ic{width:92px;height:92px;border-radius:22px;background:linear-gradient(135deg,#F58220,#D96A0B);display:flex;align-items:center;justify-content:center;font-size:46px;flex:none;box-shadow:0 8px 20px rgba(217,106,11,.4)}
+.manuales-band h2{color:#fff;font-size:clamp(21px,2.6vw,27px);margin-bottom:8px}
+.manuales-band h2 em{font-style:normal;color:var(--naranja)}
+.manuales-band p{color:#d6dae4;font-size:16px;line-height:1.6}
+.manuales-band p b{color:#fff}
+.manuales-tag{display:inline-block;background:rgba(245,130,32,.18);color:#F9A24E;font-weight:800;font-size:12px;letter-spacing:.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
 </style>
 </head>
 <body>
@@ -585,7 +594,7 @@ footer a:hover{color:var(--naranja)}
         <div class="hero-izq">
           <div class="kicker">¿Querés ser chef? Serás el mejor.</div>
           <h1>Estudiá gastronomía en la red educativa <em>más grande de Latinoamérica</em></h1>
-          <p class="sub">Carreras y cursos con título privado y certificaciones universitarias, uniforme y material de estudio incluidos, en más de 70 filiales de 7 países. Encontrá tu sede más cercana y empezá hoy.</p>
+          <p class="sub">Carreras y cursos con certificaciones universitarias, uniforme y material de estudio incluidos, en más de 70 filiales de 7 países. Encontrá tu sede más cercana y empezá hoy.</p>
           <div class="acciones">
             <button class="btn btn-naranja" onclick="ir('catalogo','todos')">Descubrí carreras y cursos</button>
             <button class="btn btn-wsp" onclick="abrirWsp()">💬 Escribinos por WhatsApp</button>
@@ -635,12 +644,22 @@ footer a:hover{color:var(--naranja)}
         <h2>Lo que solo te da IGI</h2>
       </div>
       <div class="difs">
-        <div class="dif"><span class="pais-tag">🌎 Regional</span><div class="ic">🏆</div><h4>Torneo InterIGI</h4><p>Hace más de 20 años, los mejores alumnos de todas las filiales compiten en el torneo gastronómico más grande de la red. Una experiencia única de nivel profesional.</p><a onclick="document.getElementById('experiencia').scrollIntoView({behavior:'smooth'})">Ver videos del torneo →</a></div>
-        <div class="dif"><span class="pais-tag"><span class="fl" data-flag="PY"></span> Paraguay</span><div class="ic">✈️</div><h4>Pasantías rentadas en USA y Europa</h4><p>Nuestros alumnos de Paraguay acceden a pasantías rentadas en Estados Unidos y Europa: experiencia internacional real, con ingresos, antes de recibirse.</p><a onclick="abrirWsp('Pasantías rentadas')">Consultar requisitos →</a></div>
+        <div class="dif"><span class="pais-tag">🌎 Regional</span><div class="ic">🏆</div><h4>Torneo InterIGI</h4><p>Hace más de 20 años, los mejores alumnos de todas las filiales compiten en el torneo gastronómico educativo más importante de Latinoamérica. Una experiencia única de nivel profesional.</p><a onclick="document.getElementById('experiencia').scrollIntoView({behavior:'smooth'})">Ver videos del torneo →</a></div>
+        <div class="dif"><span class="pais-tag">🌎 Internacional</span><div class="ic">✈️</div><h4>Pasantías rentadas en USA y Europa</h4><p>Nuestros alumnos acceden a pasantías rentadas en Estados Unidos y Europa: experiencia internacional real, con ingresos, antes de recibirse.</p><a onclick="abrirWsp('Pasantías rentadas')">Consultar requisitos →</a></div>
         <div class="dif"><span class="pais-tag"><span class="fl" data-flag="AR"></span> Argentina</span><div class="ic">🎓</div><h4>Certificaciones universitarias optativas</h4><p>En Argentina podés sumar a tu título de IGI certificaciones universitarias optativas que potencian tu CV y respaldan tu formación.</p><a onclick="abrirWsp('Certificaciones universitarias')">Saber más →</a></div>
         <div class="dif"><span class="pais-tag">💻 Online</span><div class="ic">🔐</div><h4>Certificados verificables con QR</h4><p>Cada certificado IGI lleva un código QR único. Descargá tus certificaciones cuando quieras y cualquier empleador puede validarlas online al instante.</p><a onclick="ir('certificados')">Validar un certificado →</a></div>
       </div>
       <div class="nota">💡 <b>Nota de propuesta:</b> estos 4 diferenciales son ORO y hoy no están en el sitio actual. Las pasantías rentadas responden directo al gancho "Francia y España" de IGA (competidor directo); el QR verificable es un diferencial de confianza que ningún competidor regional tiene (solo Mausi Sebess). Cada uno merece además su página propia indexable.</div>
+
+      <div class="manuales-band" style="margin-top:26px">
+        <div class="mb-ic">📚</div>
+        <div class="mb-txt">
+          <span class="manuales-tag">Incluido · sin costo adicional</span>
+          <h2>Te regalamos los <em>manuales físicos</em> de tu carrera</h2>
+          <p>Todos los alumnos que cursan nuestras <b>carreras</b> reciben, de regalo, los <b>manuales físicos impresos</b> de cada materia: recetarios profesionales encuadernados, guías de técnicas y material de estudio de verdad. No son apuntes sueltos ni archivos digitales que se pierden: es material tangible, pensado para tener en tu mesada y consultar cuando quieras, durante toda la cursada y mucho después de recibirte. Tu formación IGI queda en tus manos, para siempre.</p>
+        </div>
+      </div>
+      <div class="nota">💡 <b>Nota de propuesta:</b> los manuales físicos de regalo son un diferencial concreto y tangible que refuerza el valor percibido de la cuota. Conviene mostrarlos también con fotos reales de los manuales y recetarios impresos.</div>
     </div>
   </section>
 
