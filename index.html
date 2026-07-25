@@ -453,6 +453,12 @@ footer a:hover{color:var(--naranja)}
 .btn-fb{background:#1877F2;color:#fff}
 .btn-fb:hover{filter:brightness(1.06);color:#fff}
 @media(max-width:700px){.colacion-feature{grid-template-columns:1fr;justify-items:center;text-align:center;padding:18px}.cf-video iframe{width:100%;max-width:300px}}
+.reels-intro{text-align:center;max-width:640px;margin:0 auto 20px}
+.reels-intro p{color:var(--gris);font-size:15.5px;margin-top:8px}
+.reels-row{display:flex;flex-wrap:wrap;gap:22px;justify-content:center}
+.reel-card{border-radius:14px;overflow:hidden;line-height:0;box-shadow:var(--sombra);border:1px solid #eceef2;background:#eceff5}
+.reel-card iframe{display:block;width:267px;height:591px;max-width:100%}
+@media(max-width:560px){.reel-card iframe{width:300px}}
 .badge-paises{display:flex;gap:6px;font-size:18px;margin-top:8px}
 
 /* WhatsApp flotante */
@@ -839,16 +845,13 @@ footer a:hover{color:var(--naranja)}
         <h2>Testimonios de nuestras colaciones</h2>
         <p>Grabados en vivo en los actos de colación, con el título recién recibido en la mano.</p>
       </div>
-      <div class="colacion-feature">
-        <div class="cf-video">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1349401786192455%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-        <div class="cf-text">
-          <span class="manuales-tag">💬 Video real · testimonios</span>
-          <h3>Nuestros alumnos recomiendan IGI</h3>
-          <p>Escuchá en primera persona a egresados contando cómo IGI les cambió la vida: de arrancar desde cero a vivir de la gastronomía. La mejor recomendación es la de quienes ya pasaron por acá.</p>
-          <a class="btn btn-fb" href="https://www.facebook.com/reel/1349401786192455/" target="_blank" rel="noopener">▶ Ver los testimonios en Facebook</a>
-        </div>
+      <div class="reels-intro">
+        <span class="manuales-tag">💬 Videos reales · testimonios</span>
+        <p>Escuchá a nuestros egresados recomendando IGI en primera persona — la mejor prueba es la de quienes ya pasaron por acá:</p>
+      </div>
+      <div class="reels-row">
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1349401786192455%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F666768965683417%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
       </div>
       <div class="testis">
         <div class="testi"><div class="estrellas">★★★★★</div><div class="txt">"Arranqué el ABC Chef sin saber hervir agua y hoy tengo mi propio emprendimiento de viandas. Los profes te acompañan clase a clase."</div><div class="quien"><div class="ava">M</div><div><b>Micaela R.</b><span>Egresada ABC Chef · IGI Quilmes</span></div></div></div>
