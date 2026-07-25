@@ -466,7 +466,13 @@ footer a:hover{color:var(--naranja)}
 .yt-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .fb-wide{display:flex;justify-content:center}
 .fb-wide iframe{max-width:100%;border-radius:14px;box-shadow:var(--sombra);border:1px solid #eceef2;background:#eceff5}
-@media(max-width:560px){.reel-card iframe{width:300px}}
+.video-grupo{margin-top:38px;padding-top:30px;border-top:1px dashed #d6dae2}
+.video-grupo:first-of-type{margin-top:26px;padding-top:0;border-top:none}
+.grupo-titulo{display:flex;align-items:center;gap:14px;justify-content:center;text-align:left;max-width:600px;margin:0 auto 22px}
+.grupo-emoji{font-size:34px;line-height:1;flex-shrink:0}
+.grupo-titulo h3{margin:0;font-size:21px;color:var(--azul);font-weight:800;letter-spacing:-.2px}
+.grupo-titulo p{margin:3px 0 0;font-size:14px;color:var(--gris);line-height:1.4}
+@media(max-width:560px){.reel-card iframe{width:300px}.grupo-titulo{gap:11px}.grupo-emoji{font-size:28px}.grupo-titulo h3{font-size:18px}}
 .badge-paises{display:flex;gap:6px;font-size:18px;margin-top:8px}
 
 /* WhatsApp flotante */
@@ -752,31 +758,49 @@ footer a:hover{color:var(--naranja)}
       </div>
       <div class="reels-intro">
         <span class="manuales-tag">🎥 Videos reales de nuestros eventos</span>
-        <p>El Torneo InterIGI y los actos de colación, en primera persona:</p>
+        <p>Material propio, en primera persona. Lo organizamos por tipo de evento:</p>
       </div>
-      <div class="reels-row">
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1062299242023494%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🏆 Torneo InterIGI — San Juan</div></div>
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F868200032475247%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Última colación</div></div>
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F439503415504562%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Colación 2024</div></div>
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1496059365089873%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Colación 2025</div></div>
-        <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1168102091318287%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">👨‍🍳 Torneo de Cocineritos</div></div>
+
+      <div class="video-grupo">
+        <div class="grupo-titulo">
+          <span class="grupo-emoji">🏆</span>
+          <div><h3>Torneo InterIGI</h3><p>La competencia gastronómica educativa más importante de Latinoamérica, hace más de 20 años.</p></div>
+        </div>
+        <div class="reels-row">
+          <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1062299242023494%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🏆 InterIGI — San Juan</div></div>
+          <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1168102091318287%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">👨‍🍳 Torneo de Cocineritos</div></div>
+        </div>
+        <div class="wide-videos">
+          <div class="wide-vid">
+            <div class="yt-cap">🏆 InterIGI Paraguay 2017</div>
+            <div class="fb-wide"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FInstitutos.IGI%2Fvideos%2F10155495227900659%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+          </div>
+          <div class="wide-vid">
+            <div class="yt-cap">🏆 InterIGI Rosario 2018</div>
+            <div class="fb-wide"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FInstitutos.IGI%2Fvideos%2F2278925192342929%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+          </div>
+          <div class="wide-vid">
+            <div class="yt-cap">📺 Clase abierta — cobertura de TV · InterIGI Paraguay 2017</div>
+            <div class="fb-wide"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fcanalguapa%2Fvideos%2F1911675585759271%2F&show_text=true&width=476&t=0" width="476" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+          </div>
+        </div>
       </div>
-      <div class="wide-videos">
-        <div class="wide-vid">
-          <div class="yt-cap">🎬 Colación — video completo</div>
-          <div class="yt-frame"><iframe src="https://www.youtube-nocookie.com/embed/4_YJnYsYfsk" title="Acto de colación IGI" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+      <div class="video-grupo">
+        <div class="grupo-titulo">
+          <span class="grupo-emoji">🎓</span>
+          <div><h3>Actos de colación</h3><p>Ceremonias multitudinarias junto a familias, profesores y compañeros de toda la red.</p></div>
         </div>
-        <div class="wide-vid">
-          <div class="yt-cap">🏆 InterIGI Paraguay 2017</div>
-          <div class="fb-wide"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FInstitutos.IGI%2Fvideos%2F10155495227900659%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        <div class="reels-row">
+          <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F868200032475247%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Última colación</div></div>
+          <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F439503415504562%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Colación 2024</div></div>
+          <div class="reel-card"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1496059365089873%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><div class="reel-cap">🎓 Colación 2025</div></div>
         </div>
-        <div class="wide-vid">
-          <div class="yt-cap">🏆 Clase abierta — cobertura de TV · InterIGI Paraguay 2017</div>
-          <div class="fb-wide"><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fcanalguapa%2Fvideos%2F1911675585759271%2F&show_text=true&width=476&t=0" width="476" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
-        </div>
-        <div class="wide-vid">
-          <div class="yt-cap">🏆 InterIGI Rosario 2018</div>
-          <div class="fb-wide"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FInstitutos.IGI%2Fvideos%2F2278925192342929%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        <div class="wide-videos">
+          <div class="wide-vid">
+            <div class="yt-cap">🎬 Acto de colación — video completo</div>
+            <div class="yt-frame"><iframe src="https://www.youtube-nocookie.com/embed/4_YJnYsYfsk" title="Acto de colación IGI" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          </div>
         </div>
       </div>
       <div class="galeria">
@@ -787,7 +811,7 @@ footer a:hover{color:var(--naranja)}
         <div class="gal-item" style="background:linear-gradient(135deg,#5C3A21,#96633C)">🍽️<small>Platos finalistas</small></div>
         <div class="gal-item" style="background:linear-gradient(135deg,#3B2A78,#6C55B8)">🎉<small>Festejo</small></div>
       </div>
-      <div class="nota">💡 Arriba ya van los <b>videos reales del Torneo InterIGI (San Juan) y de las colaciones</b> (embebidos de Facebook con carga diferida para no frenar el sitio). La galería de abajo sigue como ejemplo: ahí van fotos reales de los eventos. Este contenido emocional es el que mejor convierte y el que nadie más tiene: es material propio, imposible de copiar.</div>
+      <div class="nota">💡 Los videos están <b>catalogados por tipo de evento</b> — Torneo InterIGI y actos de colación — todos embebidos de Facebook/YouTube con carga diferida para no frenar el sitio. La galería de abajo sigue como ejemplo: ahí van fotos reales de los eventos. Este contenido emocional es el que mejor convierte y el que nadie más tiene: es material propio, imposible de copiar.</div>
     </div>
   </section>
 
