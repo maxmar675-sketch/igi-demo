@@ -1220,7 +1220,7 @@ function verPrograma(id){
         <div class="dato"><div class="ic">⏱</div><b>${p.dur}</b><span>Duración</span></div>
         <div class="dato"><div class="ic">🗓</div><b>${p.frec}</b><span>Cursada</span></div>
         <div class="dato"><div class="ic">📍</div><b>${p.mod}</b><span>Modalidad</span></div>
-        <div class="dato"><div class="ic">🏅</div><b>${p.cert.replace(/\s*·\s*/,' + ')}</b><span>Certificación</span></div>
+        ${p.cert.split('·').map(pt=>`<div class="dato"><div class="ic">🏅</div><b>${pt.trim()}</b><span>Certificación</span></div>`).join('')}
       </div>
     </div>
   </div>
