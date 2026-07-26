@@ -87,7 +87,7 @@ footer .bandera-svg{width:26px;height:18px;margin-right:4px}
 #logo-h{transition:transform .25s ease}
 .logo:hover #logo-h{transform:scale(1.05) rotate(-1.5deg)}
 @media(prefers-reduced-motion:reduce){.logo-wrap,.logo-shine,.gate-card h2,.gate-card p,.gate-pais,.gate-nota,.ola-s{animation:none!important}}
-@media(max-width:640px){.gate-grid{grid-template-columns:repeat(2,1fr)}.gate-card img{height:min(190px,26vh)}}
+@media(max-width:640px){.gate{align-items:flex-start;padding-top:24px;padding-bottom:24px}.gate-grid{grid-template-columns:repeat(2,1fr)}.gate-card img{height:min(150px,20vh)}.logo-wrap img{height:min(150px,20vh)}}
 
 /* ===== Barra demo ===== */
 .demo-bar{background:var(--azul);color:#cbd2e0;font-size:12.5px;padding:6px 0;text-align:center}
@@ -616,18 +616,6 @@ footer a:hover{color:var(--naranja)}
 <!-- Barra de demo -->
 <div class="demo-bar">🔧 <b>DEMO DE PROPUESTA</b> — Sitio nuevo de IGI (no es el sitio real; dirección provisoria de trabajo)
   <button id="btnNotas" onclick="toggleNotas()">💡 Ver notas de la propuesta</button>
-  <span style="margin-left:10px">Portada:
-    <select id="sel-hero" onchange="setHeroVar(this.value)" style="background:#2B3245;color:#fff;border:1px solid #556;border-radius:6px;padding:2px 6px;font-size:11.5px">
-      <option value="b">B · Mosaico (los 14)</option>
-      <option value="c">C · Selector interactivo (los 14)</option>
-      <option value="d" selected>D · Cinta + foto de fondo (los 14)</option>
-      <option value="e">E · "¿Qué querés aprender?" (los 14)</option>
-      <option value="f">F · Elegí tu camino (los 14)</option>
-      <option value="g">G · Muro vivo (los 14)</option>
-      <option value="h">H · Por áreas (los 14)</option>
-      <option value="a">A · Fondo rotativo</option>
-    </select>
-  </span>
 </div>
 
 <header>
@@ -668,7 +656,6 @@ footer a:hover{color:var(--naranja)}
       </nav>
       <div class="cta-header">
         <button class="btn btn-borde" onclick="ir('contacto')">Pedí info</button>
-        <button class="btn btn-wsp" onclick="abrirWsp()">💬 WhatsApp</button>
       </div>
       <button class="hamb" onclick="document.getElementById('menu').classList.toggle('abierto')">☰</button>
     </div>
